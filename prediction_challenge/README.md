@@ -15,7 +15,7 @@ Cada uno de estos conjuntos se dividió en dos para contener, de forma separada,
 
 **Los participantes deberán:**
 
-1. Utilizar [X_train_part1.csv](https://github.com/Doctorado-UDP/data-mining-2025/blob/main/prediction_challenge/data/X_train_part_1.csv), [X_train_part2.csv](https://github.com/Doctorado-UDP/data-mining-2025/blob/main/prediction_challenge/data/X_train_part_2.csv), [X_train_part3.csv](https://github.com/Doctorado-UDP/data-mining-2025/blob/main/prediction_challenge/data/X_train_part_3.csv) e [y_train.csv](https://github.com/Doctorado-UDP/data-mining-2025/blob/main/prediction_challenge/data/y_train.csv) para entrenar sus modelos y [X_val.csv](https://github.com/Doctorado-UDP/data-mining-2025/blob/main/prediction_challenge/data/X_val.csv) e [y_val.csv](https://github.com/Doctorado-UDP/data-mining-2025/blob/main/prediction_challenge/data/y_val.csv) para validarlos.
+1. Utilizar [X_train_part1.csv](https://github.com/Doctorado-UDP/data-mining-2025/blob/main/prediction_challenge/data/X_train_part1.csv), [X_train_part2.csv](https://github.com/Doctorado-UDP/data-mining-2025/blob/main/prediction_challenge/data/X_train_part2.csv), [X_train_part3.csv](https://github.com/Doctorado-UDP/data-mining-2025/blob/main/prediction_challenge/data/X_train_part3.csv) e [y_train.csv](https://github.com/Doctorado-UDP/data-mining-2025/blob/main/prediction_challenge/data/y_train.csv) para entrenar sus modelos y [X_val.csv](https://github.com/Doctorado-UDP/data-mining-2025/blob/main/prediction_challenge/data/X_val.csv) e [y_val.csv](https://github.com/Doctorado-UDP/data-mining-2025/blob/main/prediction_challenge/data/y_val.csv) para validarlos.
 2. Obtener las etiquetas predichas utilizando [X_test.csv](https://github.com/Doctorado-UDP/data-mining-2025/blob/main/prediction_challenge/data/X_test.csv) y subirlas a la carpeta [prediction_challenge/submissions](https://github.com/Doctorado-UDP/data-mining-2025/tree/main/prediction_challenge/submissions)
 3. Pueden utilizar como script base el [código de ejemplo](https://github.com/Doctorado-UDP/data-mining-2025/blob/main/prediction_challenge/baseline_model.ipynb) y preparar modelos afinados.
 4. El siguiente [código](https://github.com/Doctorado-UDP/data-mining-2025/blob/main/prediction_challenge/submissions_eval.ipynb) será utilizado, por el profesor, para calcular el [**leaderboard**](https://github.com/Doctorado-UDP/data-mining-2025/blob/main/prediction_challenge/leaderboard.csv).
@@ -73,7 +73,7 @@ Schaffner, S., &  Thiel, P. (2024). FDZ Data description: Real-Estate Data for G
 - **wohnflaeche**. Living area. Living space in square meters. The precision of entries varies between natural numbers and numbers with two decimal places. If
 - **grundstuecksflaeche**. Plot area. This variable indicates the plot area of the housing unit in square meters. Numbers are rounded to two decimal digits.
 - **nutzflaeche**. Usable floor space. This indicates the usable floor space in square meters. Numbers are rounded to two decimal digits.
-- zimmeranzahl
+- **zimmeranzahl**. Number of rooms. Number of rooms, excluding kitchen, bath or corridors. In several cases, “zimmeranzahl” is not a natural number, which is not necessarily due to a faulty entry. In Germany there is the concept of half rooms (i.e., between 6 and 10 square meters).
 - nebenraeume
 - schlafzimmer
 - badezimmer
