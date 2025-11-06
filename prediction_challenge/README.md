@@ -47,7 +47,7 @@ Es importante que los participantes completen la metadata en el código para el 
 
 Participant | Date | Submission | Model | Accuracy | Precision | Recall | F1-Score
 --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: 
-Baseline | 2025-11-06 | 1 | RF100 |  |  | | 
+Baseline | 2025-11-06 | 1 | RF100 | 0.287 | 0.283 | 0.287 | 0.267
 
 ## Fórmula para la calificación
 
@@ -71,8 +71,8 @@ Schaffner, S., &  Thiel, P. (2024). FDZ Data description: Real-Estate Data for G
 - **baujahr**. Year that housing unit was built. Year in which the housing unit was built. Observations that lie in the future are not necessarily faulty entries, potentially indicating that an housing unit is still under construction.
 - **letzte_modernisierung**. Year of last modernization of housing unit. Indicator for the year of the last modernisation.
 - **wohnflaeche**. Living area. Living space in square meters. The precision of entries varies between natural numbers and numbers with two decimal places. If
-- grundstuecksflaeche
-- nutzflaeche
+- **grundstuecksflaeche**. Plot area. This variable indicates the plot area of the housing unit in square meters. Numbers are rounded to two decimal digits.
+- **nutzflaeche**. Usable floor space. This indicates the usable floor space in square meters. Numbers are rounded to two decimal digits.
 - zimmeranzahl
 - nebenraeume
 - schlafzimmer
