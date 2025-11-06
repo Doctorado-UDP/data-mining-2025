@@ -48,6 +48,7 @@ Es importante que los participantes completen la metadata en el código para el 
 
 Participant | Date | Submission | Model | Accuracy | Precision | Recall | F1-Score
 --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: 
+Luis | 2025-11-06 | 1 | RF100 | 0.416 | 0.417 | 0.416 | 0.416
 Victor | 2025-11-06 | 1 | RF100 | 0.287 | 0.283 | 0.287 | 0.267
 Baseline | 2025-11-06 | 1 | RF100 | 0.287 | 0.283 | 0.287 | 0.267
 
