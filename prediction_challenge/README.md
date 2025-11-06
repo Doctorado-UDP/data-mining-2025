@@ -21,7 +21,7 @@ Donde $y$ es la nota de 1.0 a 7.0; $\alpha$ = 1.0; $X$ es **el mejor F1-Score ob
 De esta forma, F1-Score = 0.800 $\sim$ 6.0; 0.900 \$\sim$ 6.6; y la nota máxima se alcanzaría con 0.960.
 
 > [!IMPORTANT]
-> **Esta forma es la misma utilizada el año pasado, sin embargo, es provisional ya que la capacidad de predicción del modelo base es menor. Por tanto, puede ser ajustada pronto para beneficiar a los participantes.
+> **Esta forma es la misma utilizada el año pasado, sin embargo, es provisional ya que la capacidad de predicción del modelo base es menor. Por tanto, puede ajustarse pronto para beneficiar a los participantes.**
 
 ## Codebook
 
