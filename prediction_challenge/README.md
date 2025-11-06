@@ -83,36 +83,36 @@ Schaffner, S., &  Thiel, P. (2024). FDZ Data description: Real-Estate Data for G
 - **hits**. Number of hits of ad. This variable shows the number of hits that the advertisement got.
 - **click_schnellkontakte**. Number of clicks on contact button. This variable indicates the number of clicks on the contact button.
 - **click_customer**. Number of clicks on customer profile. This variable indicates the number of clicks on the customer profile.
-- click_weitersagen
-- click_url
-- liste_show
-- liste_match
-- immobilientyp
-- denkmalobjekt
-- einbaukueche
-- einliegerwohnung
-- ev_wwenthalten
-- ferienhaus
-- foerderung
-- gaestewc
-- garten
-- kaufvermietet
-- keller
-- parkplatz
-- rollstuhlgerecht
-- bauphase
-- ausstattung
-- energieeffizienzklasse
-- energieausweistyp
-- haustier_erlaubt
-- heizungsart
-- kategorie_Haus
-- objektzustand
-- ergg_1km
-- blid
-- gid2019
-- kid2019
-- bef1
+- **click_weitersagen**. Number of clicks on share button. 
+- **click_url**. Number of clicks on customer URL. 
+- **liste_show**. Number of hits through result list. The variable describes how often the advertisement appeared in the result list while searching the website.
+- **liste_match**. Number of hits through search request. The variable describes how often the advertisement fit a pre-specified search request.
+- **immobilientyp**. Type of real estate. This artificial number indicates the type of a property.
+- **denkmalobjekt**. Protected historic building. This is an indicator of whether or not the property is protected.
+- **einbaukueche**. Kitchenette in housing unit. This variable indicates the presence of a fitted kitchen.
+- **einliegerwohnung**. Granny flat in housing unit. 
+- **ev_wwenthalten**. Warm water consumption included in energy consumption. This is a binary variable indicating whether the warm water consumption was included in the calculation of the energy consumption value.
+- **ferienhaus**. Usable as holiday home. This is a binary indicator for whether the housing unit can be used as a holiday home. It is only filled for apartments.
+- **foerderung**. Public housing. This is a binary variable indicating that a certificate of eligibility to public housing is needed to rent the apartment.
+- **gaestewc**. Guest toilet in housing unit. 
+- **garten**. (Shared) garden available. 
+- **kaufvermietet**. Rented when sold. This variable indicates if a housing unit for sale is already rented out.
+- **keller**. Cellar in housing unit. This variable indicates if an housing unit has a cellar or a cellar room.
+- **parkplatz**. Garage/parking space available. This is a binary variable indicating whether a parking space is available.
+- **rollstuhlgerecht**. Accessible, no steps. This is a binary indicator for step-free access to the housing unit.
+- **bauphase**.
+- **ausstattung**.
+- **energieeffizienzklasse**.
+- **energieausweistyp**.
+- **haustier_erlaubt**.
+- **heizungsart**.
+- **kategorie_Haus**.
+- **objektzustand**.
+- **ergg_1km**.
+- **blid**.
+- **gid2019**.
+- **kid2019**.
+- **bef1**.
 - bef2
 - bef10
 - bef9
