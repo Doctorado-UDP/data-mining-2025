@@ -207,3 +207,4 @@ marimo/_lsp/
 __marimo__/
 /code/.jupyter
 /code/.virtual_documents
+prediction_challenge/data/y_test.csv
