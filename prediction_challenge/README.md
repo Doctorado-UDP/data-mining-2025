@@ -1,4 +1,4 @@
-# Prediction Challenge
+# Housing Prices Prediction Challenge
 
 ## Data Mining - Doctorado UDP 2025
 
@@ -40,7 +40,7 @@ Es importante que los participantes completen la metadata en el código para el 
 4. Los participantes **pueden** crear nuevas variables a partir de información que no exista en el conjunto de datos de entrenamiento.
 5. El challenge termina el **viernes 21 de noviembre de 2024 a las 23.59 horas** de Santiago de Chile.
 
-> [!IMPORTANT]
+> [!CAUTION]
 > **El año pasado estaba prohibido crear nuevas variables con información externa del conjunto de datos de entrenamiento, sin embargo, este año es posible siempre y cuando esa información se incorpore en el paso de predicción final.**
 
 ## Leaderboard actualizado
@@ -69,8 +69,8 @@ Schaffner, S., &  Thiel, P. (2024). FDZ Data description: Real-Estate Data for G
 - **mieteinnahmenpromonat**. Rental income per month in EUR. For housing units offered for sale, this indicates the rent income if the housing unit is rented out. This is on a monthly basis and in EUR rounded to two decimal digits.
 - **heizkosten**. Heating costs. This indicates the monthly heating costs in EUR and is rounded to two decimal digits.
 - **baujahr**. Year that housing unit was built. Year in which the housing unit was built. Observations that lie in the future are not necessarily faulty entries, potentially indicating that an housing unit is still under construction.
-- letzte_modernisierung
-- wohnflaeche
+- **letzte_modernisierung**. Year of last modernization of housing unit. Indicator for the year of the last modernisation.
+- **wohnflaeche**. Living area. Living space in square meters. The precision of entries varies between natural numbers and numbers with two decimal places. If
 - grundstuecksflaeche
 - nutzflaeche
 - zimmeranzahl
