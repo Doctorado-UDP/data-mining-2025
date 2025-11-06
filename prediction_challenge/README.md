@@ -68,7 +68,9 @@ Los participantes deberían aplicar los pasos de recodificación y transformacio
 > [!CAUTION]
 > Aunque ciertas transformaciones (e.g, scaling, encoding) deben ser aplicadas a todos los conjuntos, es importante que **los parámetros (e.g., media o SD) sean obtenidas solamente de [X_train_part1.csv](https://github.com/Doctorado-UDP/data-mining-2025/blob/main/prediction_challenge/data/X_train_part1.csv), [X_train_part2.csv](https://github.com/Doctorado-UDP/data-mining-2025/blob/main/prediction_challenge/data/X_train_part2.csv) y [X_train_part3.csv](https://github.com/Doctorado-UDP/data-mining-2025/blob/main/prediction_challenge/data/X_train_part3.csv)**. 
 
-Esto evita **data leakage** a través de la influencia de los patrones de **validation test** y **test set** en el conjunto de datos de entrenamiento, garantizando una mejor generalización del modelo y evitando métricas infladas.
+Esto evita **data leakage** debido a la influencia de los patrones de **validation test** y **test set** sobre el conjunto de datos de entrenamiento, garantizando una mejor generalización del modelo y evitando métricas infladas.
+
+Si una transformación es puramente determinista (e.g., np.log1p), puede aplicarse de forma idéntica a todas las divisiones.
 
 No es necesario imputar la variable objetivo, ya que, como se ha indicado, todos los valores perdidos han sido descartados. Es posible imputar los predictores.
 
