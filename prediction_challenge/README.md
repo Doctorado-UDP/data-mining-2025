@@ -6,12 +6,13 @@
 
 ## Instrucciones
 
-En la carpeta [prediction_challenge/data](https://github.com/Doctorado-UDP/data-mining-2025/tree/main/prediction_challenge/data) se encuentran **cinco conjuntos de datos** correspondientes a particiones de una base de datos que abarca las 15 ciudades más grandes de Alemania (i.e., Berlin, Hamburg, Munich, Cologne, Frankfurt, Stuttgart, Düsseldorf, Leipzig, Dortmund, Essen, Bremen, Dresden, Hannover, Nuremberg y Duisburg). Todas tienen al menos 500K habitantes. La base de datos presenta, para cada ciudad, una muestra amplia balanceada por año del número de anuncios. El número de observaciones varía entre 1K por ciudad y año en la muestra de casas en venta y hasta 50K por año en Berlin y Leipzig y en el caso de los departamentos en renta. Se utilizarán los **anuncios de casas en venta** (*n* = 390.296) para predecir la variable **price_sqm** (i.e., Price per sqm in EUR: Calculated price per square meter by price and size of house/size of apartment). El conjunto de datos se dividió en una proporción de 70/15/15 para crear **training set**, **validation set** y **test set**. 
+En la carpeta [prediction_challenge/data](https://github.com/Doctorado-UDP/data-mining-2025/tree/main/prediction_challenge/data) se encuentran **cinco conjuntos de datos** correspondientes a particiones de una base de datos que abarca las 15 ciudades más grandes de Alemania (i.e., Berlin, Hamburg, Munich, Cologne, Frankfurt, Stuttgart, Düsseldorf, Leipzig, Dortmund, Essen, Bremen, Dresden, Hannover, Nuremberg y Duisburg). Todas tienen al menos 500K habitantes. La base de datos presenta, para cada ciudad, una muestra amplia balanceada por año del número de anuncios. El número de observaciones varía entre 1K por ciudad y año en la muestra de casas en venta y hasta 50K por año en Berlin y Leipzig y en el caso de los departamentos en renta. Se utilizarán los **anuncios de casas en venta** (*n* = 390.296) para predecir la variable **price_sqm** (Price per sqm in EUR: Calculated price per square meter by price and size of house/size of apartment). El conjunto de datos se dividió en una proporción de 70/15/15 para crear **training set**, **validation set** y **test set**. 
 
 Cada uno de estos conjuntos se dividió en dos para contener, de forma separada, los predictores y la variable dependiente. El **conjunto reservado**, no disponible en GitHub, que se utilizará para calcular las métricas del leaderboard, contiene los valores reales (*ground-truth*) de la variable dependiente del **test set**.
 
 > [!CAUTION]
 > Para no superar los límites de LFS, el conjunto de predictores del training set se dividió en tres conjuntos.
+> La variable **kaufpreis** (Purchasing price in EUR: Price at which the owner advertises to sell the housing unit. Prices are expressed in EUR and rounded to two decimal digits. This is only filled for housing units offered for sale) fue eliminada de los conjuntos.
 
 **Los participantes deberán:**
 
