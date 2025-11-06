@@ -100,7 +100,7 @@ Schaffner, S., &  Thiel, P. (2024). FDZ Data description: Real-Estate Data for G
 - **keller**. Cellar in housing unit. This variable indicates if an housing unit has a cellar or a cellar room.
 - **parkplatz**. Garage/parking space available. This is a binary variable indicating whether a parking space is available.
 - **rollstuhlgerecht**. Accessible, no steps. This is a binary indicator for step-free access to the housing unit.
-- **bauphase**.
+- **bauphase**. Construction phase. This variable indicates whether the housing unit is still under construction. Missings likely indicate that the housing unit is not under construction.
 - **ausstattung**.
 - **energieeffizienzklasse**.
 - **energieausweistyp**.
