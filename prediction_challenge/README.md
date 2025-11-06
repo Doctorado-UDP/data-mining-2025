@@ -74,15 +74,15 @@ Schaffner, S., &  Thiel, P. (2024). FDZ Data description: Real-Estate Data for G
 - **grundstuecksflaeche**. Plot area. This variable indicates the plot area of the housing unit in square meters. Numbers are rounded to two decimal digits.
 - **nutzflaeche**. Usable floor space. This indicates the usable floor space in square meters. Numbers are rounded to two decimal digits.
 - **zimmeranzahl**. Number of rooms. Number of rooms, excluding kitchen, bath or corridors. In several cases, “zimmeranzahl” is not a natural number, which is not necessarily due to a faulty entry. In Germany there is the concept of half rooms (i.e., between 6 and 10 square meters).
-- nebenraeume
-- schlafzimmer
-- badezimmer
-- parkplatzpreis
-- ev_kennwert
-- laufzeittage
-- hits
-- click_schnellkontakte
-- click_customer
+- **nebenraeume**. Number of ancillary rooms.
+- **schlafzimmer**. Number of bedrooms.
+- **badezimmer**. Number of bathrooms.
+- **parkplatzpreis**. Price of parking space in EUR.
+- **ev_kennwert**. Energy consumption per year and square meter (kWh).
+- **laufzeittage**. Days of availability of ad. This variable indicates the number of days the respective advertisement has been online.
+- **hits**. Number of hits of ad. This variable shows the number of hits that the advertisement got.
+- **click_schnellkontakte**. Number of clicks on contact button. This variable indicates the number of clicks on the contact button.
+- **click_customer**. Number of clicks on customer profile. This variable indicates the number of clicks on the customer profile.
 - click_weitersagen
 - click_url
 - liste_show
