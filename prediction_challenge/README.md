@@ -61,6 +61,54 @@ De esta forma, F1-Score = 0.800 $\sim$ 6.0; 0.900 \$\sim$ 6.6; y la nota máxima
 > [!IMPORTANT]
 > **Esta fórmula es la misma utilizada el año pasado, sin embargo, es provisional ya que la capacidad de predicción del modelo base es menor. Por tanto, puede ajustarse pronto para beneficiar a los participantes.**
 
+## Consistencia en el preprocesamiento y evitar data leakage
+
+Los participantes deberían aplicar los pasos de recodificación y transformaciones no solo a [X_train_part1.csv](https://github.com/Doctorado-UDP/data-mining-2025/blob/main/prediction_challenge/data/X_train_part1.csv), [X_train_part2.csv](https://github.com/Doctorado-UDP/data-mining-2025/blob/main/prediction_challenge/data/X_train_part2.csv), [X_train_part3.csv](https://github.com/Doctorado-UDP/data-mining-2025/blob/main/prediction_challenge/data/X_train_part3.csv), también a [X_val.csv](https://github.com/Doctorado-UDP/data-mining-2025/blob/main/prediction_challenge/data/X_val.csv) y [X_test.csv](https://github.com/Doctorado-UDP/data-mining-2025/blob/main/prediction_challenge/data/X_test.csv). Esto asegura la consistencia para la validación y los cálculos finales de las métricas.
+
+> [!CAUTION]
+> Aunque ciertas transformaciones (e.g, scaling, encoding) deben ser aplicadas a todos los conjuntos, es importante que **los parámetros (e.g., media o SD) sean obtenidas solamente de [X_train_part1.csv](https://github.com/Doctorado-UDP/data-mining-2025/blob/main/prediction_challenge/data/X_train_part1.csv), [X_train_part2.csv](https://github.com/Doctorado-UDP/data-mining-2025/blob/main/prediction_challenge/data/X_train_part2.csv) y [X_train_part3.csv](https://github.com/Doctorado-UDP/data-mining-2025/blob/main/prediction_challenge/data/X_train_part3.csv)**. 
+
+Esto evita **data leakage** a través de la influencia de los patrones de **validation test** y **test set** en el conjunto de datos de entrenamiento, garantizando una mejor generalización del modelo y evitando métricas infladas.
+
+No es necesario imputar la variable objetivo, ya que, como se ha indicado, todos los valores perdidos han sido descartados. Es posible imputar los predictores.
+
+> [!TIP]
+> A continuación, hay algunos **ejemplos** de **transformaciones consistentes**, **imputaciones** y **pipeline** para el preprocesamiento.
+
+```python
+from sklearn.preprocessing import StandardScaler, OrdinalEncoder
+from sklearn.impute import SimpleImputer
+from sklearn.pipeline import Pipeline
+from sklearn.compose import ColumnTransformer
+
+categorical_columns = ['CategoryFeature']  ## Use for categorical features
+
+## Numerical: median -> scale
+numeric_transformer = Pipeline(steps=[
+    ('imputer', SimpleImputer(strategy='median')),
+    ('scaler', StandardScaler())
+])
+
+## Categorical: most_frequent, safe encoding (handles unseen with -1)
+categorical_transformer = Pipeline(steps=[
+    ('imputer', SimpleImputer(strategy='most_frequent')),
+    ('encoder', OrdinalEncoder(handle_unknown='use_encoded_value', unknown_value=-1))
+])
+
+## Apply correct transforms per column group (fit on train, transform validation/test)
+preprocessor = ColumnTransformer(
+    transformers=[
+        ('num', numeric_transformer, numeric_columns),
+        ('cat', categorical_transformer, categorical_columns)
+    ],
+    remainder='drop' ## Keep only specified columns
+)
+
+X_train_processed = preprocessor.fit_transform(X_train)
+X_val_processed = preprocessor.transform(X_val)
+X_test_processed = preprocessor.transform(X_test)
+```
+
 ## Codebook
 
 Schaffner, S., &  Thiel, P. (2024). FDZ Data description: Real-Estate Data for Germany Campus Files (RWI-GEO-RED Panel and RWI-GEO-RED Cross v5) - Advertisements on the Internet Platform ImmobilienScout24 for teaching purposes. Codebook.
