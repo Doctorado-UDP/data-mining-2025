@@ -121,7 +121,7 @@ Schaffner, S., &  Thiel, P. (2024). [FDZ Data description: Real-Estate Data for 
 - **heizkosten**. Heating costs. This indicates the monthly heating costs in EUR and is rounded to two decimal digits.
 - **baujahr**. Year that housing unit was built. Year in which the housing unit was built. Observations that lie in the future are not necessarily faulty entries, potentially indicating that an housing unit is still under construction.
 - **letzte_modernisierung**. Year of last modernization of housing unit. Indicator for the year of the last modernisation.
-- **wohnflaeche**. Living area. Living space in square meters. The precision of entries varies between natural numbers and numbers with two decimal places. If
+- **wohnflaeche**. Living area. Living space in square meters. The precision of entries varies between natural numbers and numbers with two decimal places.
 - **grundstuecksflaeche**. Plot area. This variable indicates the plot area of the housing unit in square meters. Numbers are rounded to two decimal digits.
 - **nutzflaeche**. Usable floor space. This indicates the usable floor space in square meters. Numbers are rounded to two decimal digits.
 - **zimmeranzahl**. Number of rooms. Number of rooms, excluding kitchen, bath or corridors. In several cases, “zimmeranzahl” is not a natural number, which is not necessarily due to a faulty entry. In Germany there is the concept of half rooms (i.e., between 6 and 10 square meters).
