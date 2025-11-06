@@ -12,7 +12,7 @@ Cada uno de estos conjuntos se dividió en dos para contener, de forma separada,
 
 > [!CAUTION]
 > Para no superar los límites de LFS, el conjunto de predictores del training set se dividió en tres conjuntos.
-> La variable **kaufpreis** (Purchasing price in EUR: Price at which the owner advertises to sell the housing unit. Prices are expressed in EUR and rounded to two decimal digits. This is only filled for housing units offered for sale) fue eliminada de los conjuntos.
+> La variable **kaufpreis** (Purchasing price in EUR) fue eliminada de los conjuntos.
 
 **Los participantes deberán:**
 
