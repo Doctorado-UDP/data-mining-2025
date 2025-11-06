@@ -106,31 +106,32 @@ Schaffner, S., &  Thiel, P. (2024). FDZ Data description: Real-Estate Data for G
 - **energieausweistyp**. Type of Energy Performance Certificates (EPCs). This variable indicates the type of Energy Performance Certificate that the customer has for the housing unit.
 - **haustier_erlaubt**. Pets allowed. This binary indicator shows whether pets are allowed in the housing unit.
 - **heizungsart**. Type of heating. This is an artificially created category number indicating the type of heating.
-- **kategorie_Haus**.
-- **objektzustand**.
-- **ergg_1km**.
-- **blid**.
-- **gid2019**.
-- **kid2019**.
-- **bef1**.
-- **bef2**.
-- **bef10**.
-- **bef9**.
-- **bef8**.
-- **bef7**.
-- **bef6**.
-- **bef5**.
-- **bef4**.
-- **bef3**.
-- **anbieter**.
-- **duplicateid**.
-- **spell**.
-- **hits_gen**.
-- **click_schnellkontakte_gen**.
-- **click_weitersagen_gen**.
-- **click_url_gen**.
-- **liste_show_gen**.
-- **liste_match_gen**.
-- **adat**.
-- **edat**.
-- **price_sqm**.
+- **kategorie_Haus**. House type. The artificial category number indicates which housing unit category a property belongs to. Each property is assigned exactly one category number. This variable is filled for houses only.
+- **objektzustand**. Condition of housing unit. The artificial condition number indicates the condition of a property. Each property is assigned exactly one out of 11 possible numbers.
+- **ergg_1km**. 1-skm raster cell following INSPIRE. This variable indicates the grid cell of a 1-square-km raster of Germany according to the INSPIRE guideline.
+- **blid**. German federal states (Bundesländer).
+- **gid2019**. Municipality identifier (AGS, 2019). This is the municipality identifier according to the German Official Municipality Key (Amtlicher Gemeindeschluessel). It is based on the territorial definition of 2019 (end of year).
+- **kid2019**. District identifier (AGS, 2019). This is the district identifier according to the German Official Municipality Key (Amtlicher Gemeindeschluessel). It is based on the territorial definition of 2019 (end of year).
+- **bef1**. Firing type. Firing type of heating system; if there are several heating types than they are listed in bef2, bef3 etc.
+- **bef2**. Firing type. Firing type of heating system; if there are several heating types than they are listed in bef2, bef3 etc.
+- **bef10**. Firing type. Firing type of heating system; if there are several heating types than they are listed in bef2, bef3 etc.
+- **bef9**. Firing type. Firing type of heating system; if there are several heating types than they are listed in bef2, bef3 etc.
+- **bef8**. Firing type. Firing type of heating system; if there are several heating types than they are listed in bef2, bef3 etc.
+- **bef7**. Firing type. Firing type of heating system; if there are several heating types than they are listed in bef2, bef3 etc.
+- **bef6**. Firing type. Firing type of heating system; if there are several heating types than they are listed in bef2, bef3 etc.
+- **bef5**. Firing type. Firing type of heating system; if there are several heating types than they are listed in bef2, bef3 etc.
+- **bef4**. Firing type. Firing type of heating system; if there are several heating types than they are listed in bef2, bef3 etc.
+- **bef3**. Firing type. Firing type of heating system; if there are several heating types than they are listed in bef2, bef3 etc.
+- **anbieter**. Type of offeror. Type of offeror like private, real-estate agent etc.
+- **duplicateid**. Classification of housing unit identifiers used more than once. This is a generated variable, indicating whether a duplicate spell is likely to be the same housing unit, or a new housing unit. New housing units can have the same ID when customers re-use a previous advertisement for another apartment, or when an housing unit is re-rented/resold. In City Campus File only.
+- **spell**. Spell counter within housing unit identifier. This is an artificially generated variable indicating the spell within each housing unit ID, should an ID occur more than once. Spells are ordered chronologically. In City Campus File only.
+- **hits_gen**. Number of hits of ad, adjusted by ad availability. This variable shows the number of hits that the advertisement got. The value
+is adjusted by the availability of ad (i.e., laufzeittage).
+- **click_schnellkontakte_gen**. Number of clicks on contact button, adjusted by ad availability. This variable indicates the number of clicks on the contact button. The value is adjusted by the availability of ad (i.e., laufzeittage).
+- **click_weitersagen_gen**. Number of clicks on share button, adjusted by ad availability. This variable indicates the number of clicks on the share button. The value is adjusted by the availability of ad (i.e., laufzeittage).
+- **click_url_gen**. Number of clicks on customer url, adjusted by ad availability. This variable indicates the number of clicks on the customer’s URL. The value is adjusted by the availability of ad (i.e., laufzeittage).
+- **liste_show_gen**. Number of hits through result list, adjusted by ad availability. The variable describes how often the advertisement appeared in the result list while searching the website. The value is adjusted by the availability of ad (i.e., laufzeittage).
+- **liste_match_gen**. Number of hits through search request, adjusted by ad availability. The variable describes how often the advertisement fit a pre-specified search request. The value is adjusted by the availability of ad (i.e., laufzeittage).
+- **adat**. Beginning of ad, month. This is a numerical variable, which refers to the month during which a housing unit is first advertised. If a housing unit is advertised at least at some point in time during a certain month, this advertisement is included in the respective wave. If an advertisement is updated during a specific month, only the last update is recorded and enters the dataset.
+- **edat**. Ending of ad, month. This numeric variable refers to the month of the end of the advertisement. This can be misleading of the advertisement is split into two spells due to the timing of the data extraction from the database (see Section 2 for more information).
+- **price_sqm**. Price per sqm in EUR. Calculated price per square meter by price and size of house/size of apartment.
