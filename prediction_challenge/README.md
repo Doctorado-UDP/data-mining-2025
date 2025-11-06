@@ -111,7 +111,7 @@ X_test_processed = preprocessor.transform(X_test)
 
 ## Codebook
 
-Schaffner, S., &  Thiel, P. (2024). FDZ Data description: Real-Estate Data for Germany Campus Files (RWI-GEO-RED Panel and RWI-GEO-RED Cross v5) - Advertisements on the Internet Platform ImmobilienScout24 for teaching purposes. Codebook.
+Schaffner, S., &  Thiel, P. (2024). [FDZ Data description: Real-Estate Data for Germany Campus Files (RWI-GEO-RED Panel and RWI-GEO-RED Cross v5) - Advertisements on the Internet Platform ImmobilienScout24 for teaching purposes](https://github.com/Doctorado-UDP/data-mining-2025/blob/main/prediction_challenge/docs/Datenbeschreibung-Campus-v5.pdf). Codebook.
 
 - **obid**. Housing unit identifier. Each property is uniquely identified by an artificial ID number. IDs are propertyspecific and do not change over time even if the object is temporarily withdrawn from the pool of advised real estates and offered again at a later time. Some IDs may be re-used over time when agents re-use previous advertisements.
 - **plz**. Postcode. It gives the postal code of the city the housing unit is located in.
