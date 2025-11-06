@@ -101,11 +101,11 @@ Schaffner, S., &  Thiel, P. (2024). FDZ Data description: Real-Estate Data for G
 - **parkplatz**. Garage/parking space available. This is a binary variable indicating whether a parking space is available.
 - **rollstuhlgerecht**. Accessible, no steps. This is a binary indicator for step-free access to the housing unit.
 - **bauphase**. Construction phase. This variable indicates whether the housing unit is still under construction. Missings likely indicate that the housing unit is not under construction.
-- **ausstattung**.
-- **energieeffizienzklasse**.
-- **energieausweistyp**.
-- **haustier_erlaubt**.
-- **heizungsart**.
+- **ausstattung**. Facilities of housing unit. This is an artificial category number indicating the facilities of the housing unit.
+- **energieeffizienzklasse**. Energy Efficiency Rating. The Energy Efficiency rating is represented here as an artificially created categorical variable.
+- **energieausweistyp**. Type of Energy Performance Certificates (EPCs). This variable indicates the type of Energy Performance Certificate that the customer has for the housing unit.
+- **haustier_erlaubt**. Pets allowed. This binary indicator shows whether pets are allowed in the housing unit.
+- **heizungsart**. Type of heating. This is an artificially created category number indicating the type of heating.
 - **kategorie_Haus**.
 - **objektzustand**.
 - **ergg_1km**.
@@ -113,24 +113,24 @@ Schaffner, S., &  Thiel, P. (2024). FDZ Data description: Real-Estate Data for G
 - **gid2019**.
 - **kid2019**.
 - **bef1**.
-- bef2
-- bef10
-- bef9
-- bef8
-- bef7
-- bef6
-- bef5
-- bef4
-- bef3
-- anbieter
-- duplicateid
-- spell
-- hits_gen
-- click_schnellkontakte_gen
-- click_weitersagen_gen
-- click_url_gen
-- liste_show_gen
-- liste_match_gen
-- adat
-- edat
-- price_sqm
+- **bef2**.
+- **bef10**.
+- **bef9**.
+- **bef8**.
+- **bef7**.
+- **bef6**.
+- **bef5**.
+- **bef4**.
+- **bef3**.
+- **anbieter**.
+- **duplicateid**.
+- **spell**.
+- **hits_gen**.
+- **click_schnellkontakte_gen**.
+- **click_weitersagen_gen**.
+- **click_url_gen**.
+- **liste_show_gen**.
+- **liste_match_gen**.
+- **adat**.
+- **edat**.
+- **price_sqm**.
