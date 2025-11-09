@@ -20,7 +20,7 @@ Cada uno de estos conjuntos se dividió en dos para contener, de forma separada,
 2. Obtener las etiquetas predichas utilizando [X_test.csv](https://github.com/Doctorado-UDP/data-mining-2025/blob/main/prediction_challenge/data/X_test.csv) y subirlas a la carpeta [prediction_challenge/submissions](https://github.com/Doctorado-UDP/data-mining-2025/tree/main/prediction_challenge/submissions)
 3. Pueden utilizar como script base el [código de ejemplo](https://github.com/Doctorado-UDP/data-mining-2025/blob/main/prediction_challenge/baseline_model.ipynb) y preparar modelos afinados.
 4. El siguiente [código](https://github.com/Doctorado-UDP/data-mining-2025/blob/main/prediction_challenge/submissions_eval.ipynb) será utilizado, por el profesor, para calcular el [**leaderboard**](https://github.com/Doctorado-UDP/data-mining-2025/blob/main/prediction_challenge/leaderboard.csv).
-5. El leaderboard se calculará diariamente, excepto los domingos, hasta que cierre el challenge.
+5. El leaderboard se calculará diariamente, excepto los domingos (aunque quizás algunos sí), hasta que se cierre el challenge.
 
 **Formato de envío (también disponible en el código de ejemplo):**
 
@@ -48,6 +48,7 @@ Es importante que los participantes completen la metadata en el código para el 
 
 Participant | Date | Submission | Model | Accuracy | Precision | Recall | F1-Score
 --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: 
+Luis | 2025-11-09 | 3 | RF100 | 0.744 | 0.742 | 0.744 | 0.743
 Luis | 2025-11-06 | 1 | RF100 | 0.416 | 0.417 | 0.416 | 0.416
 Baseline | 2025-11-06 | 1 | RF100 | 0.287 | 0.283 | 0.287 | 0.267
 Dayana | 2025-11-07 | 1 | RF100 | 0.287 | 0.283 | 0.287 | 0.267
