@@ -35,7 +35,7 @@ Es importante que los participantes completen la metadata en el código para el 
 
 **Cuestiones logísticas:**
 
-1. Se puede realizar máximo **un envío por día**.
+1. Se puede realizar máximo **un envío por día** (los adicionales quedarán standby en [prediction_challenge/submissions](https://github.com/Doctorado-UDP/data-mining-2025/tree/main/prediction_challenge/submissions_standby)).
 2. Cada modelo tiene un límite de **cinco predictores**.
 3. Los participantes pueden crear índices, recodificar y transformar predictores utilizando los datos de entrenamiento y probar distintos hiperparámetros y modelos. 
 4. Los participantes **pueden** crear nuevas variables a partir de información que no exista en el conjunto de datos de entrenamiento.
@@ -51,6 +51,7 @@ Participant | Date | Submission | Model | Accuracy | Precision | Recall | F1-Sco
 Luis | 2025-11-09 | 3 | RF100 | 0.744 | 0.742 | 0.744 | 0.743
 Luis | 2025-11-06 | 1 | RF100 | 0.416 | 0.417 | 0.416 | 0.416
 Dayana | 2025-11-11 | 2 | RF100 | 0.416 | 0.417 | 0.416 | 0.416
+Dayana | 2025-11-12 | 3 | RF100 | 0.349 | 0.348 | 0.349 | 0.348
 Baseline | 2025-11-06 | 1 | RF100 | 0.287 | 0.283 | 0.287 | 0.267
 Dayana | 2025-11-07 | 1 | RF100 | 0.287 | 0.283 | 0.287 | 0.267
 Victor | 2025-11-06 | 1 | RF100 | 0.287 | 0.283 | 0.287 | 0.267
