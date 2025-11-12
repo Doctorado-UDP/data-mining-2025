@@ -57,16 +57,16 @@ Dayana | 2025-11-07 | 1 | RF100 | 0.287 | 0.283 | 0.287 | 0.267
 Victor | 2025-11-06 | 1 | RF100 | 0.287 | 0.283 | 0.287 | 0.267
 Luis | 2025-11-08 | 2 | RF100 | 0.202 | 0.202 | 0.202 | 0.202
 
-## Fórmula para la calificación
+## Nueva fórmula para la calificación
 
-$$y = \alpha + (X - 0.001) \times 6.258$$ 
+$$y = \alpha + (X - 0.001) \times k$$ 
 
-Donde $y$ es la nota de 1.0 a 7.0; $\alpha$ = 1.0; $X$ es **el mejor F1-Score obtenido** durante el challenge.
+Donde $y$ es la nota de 1.0 a 7.0; $\alpha$ = 1.0; $X$ es **el mejor F1-Score obtenido** durante el challenge; *k* = 7.320.
 
-De esta forma, F1-Score = 0.800 $\sim$ 6.0; 0.900 \$\sim$ 6.6; y la nota máxima se alcanzaría con 0.960.
+De esta forma, F1-Score = 0.700 $\sim$ 6.1; 0.800 \$\sim$ 6.8; y la nota máxima se alcanzaría con 0.821.
 
 > [!IMPORTANT]
-> **Esta fórmula es la misma utilizada el año pasado, sin embargo, es provisional ya que la capacidad de predicción del modelo base es menor. Por tanto, puede ajustarse pronto para beneficiar a los participantes.**
+> **El valor de *k* el año pasado fue 6.258, sin embargo, este año la capacidad de predicción del modelo base es menor. Por tanto, se ajustó a un valor más sensible a la dificultad del challenge y así no penalizar injustamente la calificación.**
 
 ## Consistencia en el preprocesamiento y evitar data leakage
 
