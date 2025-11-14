@@ -39,7 +39,7 @@ Es importante que los participantes completen la metadata en el código para el 
 2. Cada modelo tiene un límite de **cinco predictores**.
 3. Los participantes pueden crear índices, recodificar y transformar predictores utilizando los datos de entrenamiento y probar distintos hiperparámetros y modelos. 
 4. Los participantes **pueden** crear nuevas variables a partir de información que no exista en el conjunto de datos de entrenamiento.
-5. El challenge termina el **viernes 21 de noviembre de 2024 a las 23.59 horas** de Santiago de Chile.
+5. El challenge termina el **domingo 30 de noviembre de 2025 a las 23.59 horas** de Santiago de Chile.
 
 > [!CAUTION]
 > **El año pasado estaba prohibido crear nuevas variables con información externa del conjunto de datos de entrenamiento, sin embargo, este año es posible siempre y cuando esa información se incorpore en el paso de predicción final.**
