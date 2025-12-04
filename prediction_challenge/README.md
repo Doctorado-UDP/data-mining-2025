@@ -48,9 +48,10 @@ Es importante que los participantes completen la metadata en el código para el 
 
 Participant | Date | Submission | Model | Accuracy | Precision | Recall | F1-Score
 --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: 
-Luis | 2025-11-17 | 4 | RF500 | 0.691 | 0.690 | 0.692 | 0.690
+Luis :trophy: | 2025-11-17 | 4 | RF500 | 0.691 | 0.690 | 0.692 | 0.690
 Luis | 2025-11-15 | 3 | RF500 | 0.688 | 0.687 | 0.689 | 0.688
 Luis | 2025-11-14 | 2 | RF100 | 0.687 | 0.685 | 0.687 | 0.686
+Gabriel | 2025-11-30 | 4 | RF500 | 0.586 | 0.580 | 0.586 | 0.581
 Gabriel | 2025-11-26 | 3 | RF500 | 0.570 | 0.566 | 0.570 | 0.568
 Gabriel | 2025-11-19 | 2 | RF300 | 0.560 | 0.553 | 0.561 | 0.555
 Gabriel | 2025-11-18 | 1 | RF300 | 0.533 | 0.528 | 0.533 | 0.528
@@ -66,6 +67,7 @@ Dayana | 2025-11-12 | 3 | RF100 | 0.349 | 0.348 | 0.349 | 0.348
 Baseline | 2025-11-06 | 1 | RF100 | 0.287 | 0.283 | 0.287 | 0.267
 Dayana | 2025-11-07 | 1 | RF100 | 0.287 | 0.283 | 0.287 | 0.267
 Victor | 2025-11-06 | 1 | RF100 | 0.287 | 0.283 | 0.287 | 0.267
+Dayana | 2025-11-30 | 5 | RF300 | 0.263 | 0.268 | 0.263 | 0.230
 
 ## Nueva fórmula para la calificación
 
@@ -77,6 +79,10 @@ De esta forma, F1-Score = 0.700 $\sim$ 6.1; 0.800 \$\sim$ 6.8; y la nota máxima
 
 > [!IMPORTANT]
 > **El valor de *k* el año pasado fue 6.258, sin embargo, este año la capacidad de predicción del modelo base es menor. Por tanto, se ajustó a un valor más sensible a la dificultad del challenge y así no penalizar injustamente la calificación.**
+
+## Ajuste final de fórmula para la calificación
+
+Para controlar la dificultad específica del challenge de este año, el valor de *k* para la fórmula ha sido ajustado nuevamente: **_k_ = 8.320**.
 
 ## Consistencia en el preprocesamiento y evitar data leakage
 
